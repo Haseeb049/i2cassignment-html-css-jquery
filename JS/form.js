@@ -83,7 +83,8 @@ $(document).ready(function () {
 
   function Pull_Donors_From_Storage() {
     const stored_donors = localStorage.getItem("donorNumber");
-    $("#donors").html(stored_donors);
+    if (stored_donors) $("#donors").html(stored_donors);
+    else $("#donors").html(0);
   }
 
   function Pull_Saved_Amount_From_Storage() {
