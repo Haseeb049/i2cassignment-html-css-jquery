@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Haseeb Ahmad</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+  </head>
+
+  <body>
+    <!-- start-->
+
+    <div class="main-container">
+      <div class="tooltip-container">
+        <div class="tooltip">
+          <span>$ <span id="leftAmount">0</span></span> still needed for this
+          project
+        </div>
+      </div>
+      <div class="form-section">
+        <div class="progress-bar-container">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="days-left">
+          <span>Only <span id="daysCount"></span> days left</span> to fund this
+          project.
+        </div>
+        <div class="donor-numbers">
+          Join the <span id="donors">0</span> other donors who have already
+          supported this project. Every dollar helps.
+        </div>
+        <div class="form">
+          <form id="form" action="">
+            <span class="input-symbol-dollar">
+              <input id="amount" name="amount" type="text" />
+              <h5 id="usercheck" style="color: red">**amount is missing</h5>
+            </span>
+            <input
+              type="submit"
+              id="submitbtn"
+              class="give-button"
+              value="Give Now"
+            />
+          </form>
+        </div>
+        <a>Why give <span>$50?</span></a>
+      </div>
+      <div class="save-share-buttons">
+        <button id="save">Save for later</button>
+        <button>Tell your friends</button>
+      </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./JS/form.js"></script>
+  </body>
+</html>
